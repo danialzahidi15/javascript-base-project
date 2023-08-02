@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title h2 {
+    margin: 1rem 0;
+}
+
+.underline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: steelblue;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 3px;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    min-width: 300px;
+    height: 100%;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+    margin: 0.5rem 0;
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 10px -4px 2px 0px steelblue;
+    object-fit: cover;
+}
+
+.review h4 {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.review #job {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: steelblue;
+    font-weight: 600;
+    margin: 0.5rem;
+}
+
+.review #info {
+    font-size: 14px;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 0.5rem;
+}
+
+.btn {
+    background: transparent;
+    color: steelblue;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.random-btn {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: steelblue;
+    padding: 0.3rem 0.8rem;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    margin: 0.5rem;
+    cursor: pointer;
+}

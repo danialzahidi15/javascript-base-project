@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  transition: all 1s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  color: black;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url("./client3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: contain;
+  min-height: 100vh;
+  width: 100%;
+}
+
+nav {
+  padding: 1rem 2rem;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: whitesmoke;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.nav-header p {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 2px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  padding: 0.1rem 1rem;
+  cursor: pointer;
+}
+
+.nav-header p:hover {
+  border: 2px solid rgba(0, 0, 0, 1);
+}
+
+.nav-toggle {
+  font-size: 20px;
+  color: black;
+  background: transparent;
+  border: none;
+  outline: none;
+  visibility: hidden;
+}
+
+.links {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.links a {
+  text-transform: capitalize;
+  color: rgba(6, 132, 163, 0.6);
+  transition: all 1s ease;
+}
+
+.links a:hover {
+  color: rgba(6, 132, 163, 1);
+}
+
+.scroll-links {
+  transition: all 1s ease;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 90vh;
+  max-width: 500px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  gap: 0.5rem;
+  padding: 2rem 2rem;
+  border-radius: 10px;
+}
+
+.container h1 {
+  font-size: 34px;
+  font-family: "Poppins";
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  color: white;
+}
+
+.container p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: gray;
+}
+
+.btn {
+  text-transform: capitalize;
+  color: white;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.section {
+  display: grid;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.section h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section > h2 > span {
+  color: rgb(25, 164, 199);
+}
+
+#services {
+  background: rgb(241, 251, 255);
+}
+
+footer {
+  text-align: center;
+  text-transform: capitalize;
+  color: whitesmoke;
+  background: rgb(1, 17, 20);
+  padding: 5rem;
+  min-height: 100%;
+}
+
+.top-link {
+  font-size: 20px;
+  color: darkcyan;
+  border: none;
+  background: transparent;
+  outline: none;
+  position: fixed;
+  right: 4rem;
+  bottom: 4rem;
+  cursor: pointer;
+  animation: bigger 2s ease infinite;
+  visibility: hidden;
+  z-index: -100;
+}
+
+.show-link {
+  visibility: visible;
+  z-index: 100;
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    background: whitesmoke;
+  }
+  .nav-header {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-center {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .nav-toggle {
+    visibility: visible;
+    cursor: pointer;
+  }
+  .hidden {
+    display: none;
+  }
+  .links {
+    flex-direction: column;
+    padding-top: 2rem;
+    z-index: -100;
+  }
+}
+
+@keyframes bigger {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
