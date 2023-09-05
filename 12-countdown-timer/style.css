@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.inner-width {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0;
+}
+
+.section-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gift-img {
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.gift-img img {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.gift-info {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.gift-info h3 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.gift-info h4 {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.deadline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.deadline-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+    color: white;
+    text-align: center;
+    height: 80px;
+    width: 80px;
+}
+
+.deadline-format > div > h4 {
+    font-size: 32px;
+}
+
+@media screen and (max-width: 800px) {
+    .section-center {
+        grid-template-columns: 1fr;
+    }
+    .gift-info {
+        gap: 1rem;
+    }
+    .deadline {
+        flex-wrap: wrap;
+    }
+}

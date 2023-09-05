@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    padding: 0;
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.title {
+    display: grid;
+    place-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.title h2 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.title p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Poppins';
+}
+
+.about-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    background: white;
+}
+
+article {
+    width: 400px;
+}
+
+img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 5px 5px 0 0;
+    background: rgb(189, 186, 186);
+}
+
+.tab-btn {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    border: none;
+    outline: none;
+    margin: 0;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tab-btn:hover:not(.active) {
+    background: snow;
+}
+
+.tab-btn.active {
+    background: whitesmoke;
+}
+
+.about-content {
+    background: whitesmoke;
+    padding: 1rem;
+}
+
+.content {
+    background: transparent;
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.content h4 {
+    text-transform: capitalize;
+}
+
+.content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 800px) {
+    .title h2 {
+        font-size: 24px;
+    }
+    .title p {
+        font-size: 14px;
+    }
+    .about-center {
+        grid-template-columns: 1fr;
+    }
+}
